@@ -1,0 +1,23 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+  "include": [
+    "src/**/*.vue",
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    ".eslintrc.cjs",
+    "eslint.config.js",
+    "vite.config.ts",
+  ],
+  "compilerOptions": {
+    "allowImportingTsExtensions": true,
+    "baseUrl": ".",
+    "noEmit": true,
+    "module": "ES2022",
+    "sourceMap": true,
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    }
+  }
+}
